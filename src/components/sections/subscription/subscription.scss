@@ -1,0 +1,57 @@
+.subscription
+{
+    flex: 1;
+    padding: 35px;
+    border-bottom: 1px solid rgb(233, 229, 229) ;
+    .subscriptionContainer
+    {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #ffb131;
+        padding: 50px;
+        border-radius: 10px;
+        text-align: center;
+
+        .formSub{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            input{
+                line-height: 2rem;
+                font-size: 14px;
+                outline: none;
+                border: none;
+                margin-right: 10px;
+                background-color: #fcfcfc;
+                border-radius: 5px;
+                padding: 0 12px;                
+            }
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .subscription
+    {
+        padding: 0px;
+        .subscriptionContainer
+        {
+            justify-content: space-between;
+            padding: 35px;
+            border-radius: 0px;            
+            .formSub{
+                margin-top: 20px;
+                overflow: hidden;
+                input{
+                    line-height: 2rem;
+                    margin-right: 0px;
+                    padding: 0 12px;
+                    width: 90%;
+                    margin-bottom: 10px;
+                }
+            }
+        }
+    }
+}

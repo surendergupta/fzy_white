@@ -1,0 +1,56 @@
+.top{
+    flex: 1;
+    padding: 75px 35px;
+    border-bottom: 1px solid rgb(233, 229, 229) ;
+    .topContainer
+    {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: row;
+
+        .left{
+            flex: 1;
+            h2{
+                font-size: 30px;
+                margin-bottom: 10px;
+            }
+            p{
+                font-size: 14px;
+                margin-bottom: 10px;
+            }
+            a{
+                text-align: center;
+                text-decoration: none;
+            }
+        }
+        .right{
+            flex: 1;
+
+            .rightBox{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .top{
+        padding: 20px;
+        .topContainer {
+            flex-direction: column;
+            .left{
+                margin-bottom: 20px;
+            }
+        }
+    }
+    
+}
+
+@media (min-width: 601px) and (max-width: 900px) {
+    .topContainer {
+      flex-direction: column;
+    }
+}

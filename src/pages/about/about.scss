@@ -1,0 +1,124 @@
+.aboutpage{
+    flex: 1;
+    .aboutpageConatiner{
+        display: flex;
+        flex-direction: column;
+        .aboutTop, .aboutTokenMission
+        {
+            display: flex;
+            flex: 1;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            background-color: rgb(255, 175, 2);
+            .aboutTopContent
+            {
+                display: block;
+                width: 50%;
+                margin: 110px auto;
+                text-align: center;
+                h1{
+                    font-size: 52px;
+                    line-height: 72px;
+                }
+                p{
+                    line-height: 35px;
+                    font-size: 16px;
+                }
+            }
+        }
+        .ourmission
+        {
+            display: flex;
+            flex: 1;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            padding: 100px 70px;
+            color: #000;
+
+            h2{
+                font-size: 40px;
+                line-height: 4rem;
+                margin-bottom: 25px;
+            }
+
+            h4{
+                font-size: 22px;
+                line-height: 1.5rem;
+                margin-bottom: 45px;
+            }
+
+            p{
+                margin-bottom: 15px;
+                font-size: 18px;
+                line-height: 22px;
+            }
+        }
+        .aboutTokenMission, .aboutOurTeam
+        {
+            padding: 100px 70px;
+            text-align: center;
+
+            h2{
+                font-size: 44px;
+                line-height: 50px;
+            }
+
+            p{
+                font-size: 18px;
+                line-height: 24px;
+            }
+
+            .boxItem{
+                display: flex;
+                align-items: flex-start;
+                justify-content: baseline;
+                margin-bottom: 20px;
+                .boxImg{
+                    height: 30px;
+                    margin-right: 25px;
+                }
+
+                .boxContent{
+                    p{
+                        text-align: start;
+                    }
+                }
+            }
+        }
+        .aboutOurTeam
+        {
+            h2{
+                color: rgb(255, 175, 2);
+                text-transform: uppercase;
+            }
+            h6{
+                font-size: 20px;
+                font-weight: 900;
+            }
+
+            .teamBox{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                border: 1px solid #e4dede;
+                img{
+                    width: 80%;
+                    margin: 25px auto;
+                }
+                h2{
+                    font-size: 18px;
+                    font-weight: 700;
+                    line-height: 28px;
+                }
+                h4{
+                    color: #000;
+                    font-size: 16px;
+                    line-height: 28px;
+                }
+            }
+        }
+    }
+}

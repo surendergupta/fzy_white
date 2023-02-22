@@ -1,0 +1,271 @@
+.roadmap{
+    flex: 1;
+    padding: 35px 35px;
+    border-bottom: 1px solid rgb(233, 229, 229) ;
+
+    .roadmapContainer{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .rtop{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            border-bottom: none;
+            h2{
+                font-size: 30px;
+                line-height: 4rem;
+                text-align: center;
+            }
+            p{
+                font-size: 14px;
+                font-weight: 500;
+                text-align: center;
+            }
+
+            .tabContainer
+            {
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: space-between;
+                position: relative;
+                flex: 0 0 auto;
+                width: 100%;
+                
+                .roadmap-box{
+                    position: relative;
+                    padding-left: 5.756%;
+                    width: inherit;
+                    &::before {
+                        content: " ";
+                        position: absolute;
+                        top: 8%;
+                        left: 50%;
+                        width: 20px;
+                        height: 20px;
+                        background: #0f49ba;
+                        display: block;
+                        border-radius: 50%;
+                        transform: translateX(-53%);
+                        z-index: 1;
+                    }
+                    &::after {
+                        content: " ";
+                        position: absolute;
+                        top: 10%;
+                        left: 50%;
+                        width: 10px;
+                        height: 10px;
+                        background: #4184fc;
+                        display: block;
+                        border-radius: 50%;
+                        transform: translateX(-53%);
+                        z-index: 1;
+                    }
+                    &:first-child
+                    {
+                        margin-top: 10px;
+                    }
+                    .o-common-card
+                    {
+                        position: relative;
+                        display: block;
+                        width: 25%;
+                        background: #ffffff;
+                        border: 1px solid #bbbbbd;
+                        border-radius: 10px;
+                        margin-bottom: 0;
+                        position: relative;
+                        overflow: visible;
+                        cursor: pointer;
+
+                        &::before {
+                            content: " ";
+                            position: absolute;
+                            top: 10%;
+                            width: 6px;
+                            height: 100%;
+                            display: block;
+                            right: -89%;
+                            background: #4184fc;
+                            border-radius: 20px;
+                        }
+
+                        &::after {
+                            content: " ";
+                            position: absolute;
+                            top: 10%;
+                            left: 100%;
+                            width: 90%;
+                            height: 6px;
+                            display: block;
+                            background-image: linear-gradient(to right, transparent, #4184fc);
+                            background-repeat: repeat-x;
+                        }
+
+                        .unicode-list
+                        {
+                            list-style: none;
+                            margin: 0;
+                            padding: 5px 5px;
+                            padding-left: 10px;
+                            margin-top: 10px;
+
+                            li{
+                                list-style: none;
+                                padding: 6px 10px;
+                                font-size: 18px;
+                                line-height: 20px;
+                                display: flex;
+                            }
+                        }
+
+                        h5 {
+                            font-size: 22px;
+                            line-height: 30px;
+                            color: #000;
+                            padding: 15px 15px;
+                            text-transform: uppercase;
+                            border-top: 1px solid #bbbbbd;
+                            position: relative;
+                            margin-bottom: 0;
+                        }
+                    }
+                    &.roadmap-right {
+                        padding-right: 9.756%;
+                        .o-common-card {
+                            margin-left: auto;
+
+                            &::before {
+                                left: -91%;
+                            }
+                            &::after {
+                                left: auto;
+                                right: 102%;
+                                transform: rotate(180deg);
+                            }
+                        }
+                    }
+
+                    &:nth-last-child(1) .o-common-card::before {
+                        display: none;
+                    }
+                }
+
+            }
+        }
+    }
+}
+
+
+@media (max-width: 600px) {
+    .roadmap{
+        padding: 20px;    
+        .roadmapContainer{
+            .rtop{
+                display: flex;
+                flex-direction: column;
+                h2{
+                    font-size: 20px;
+                    line-height: 2rem;;
+                }
+                p{
+                    font-size: 13px;
+                    font-weight: 500;
+                }
+    
+                .tabContainer
+                {
+                    display: flex;
+                    width: 100%;
+                    
+                    .roadmap-box{
+                        position: relative;
+                        padding-left: 2.756%;
+                        &::before {
+                            top: 8%;
+                            left: 50%;
+                            width: 16px;
+                            height: 16px;
+                        }
+                        &::after {
+                            top: 10%;
+                            left: 50%;
+                            width: 8px;
+                            height: 8px;
+                        }
+                        &:first-child
+                        {
+                            margin-top: 10px;
+                        }
+                        .o-common-card
+                        {
+                            width: 40%;
+                            border-radius: 10px;
+                            margin-bottom: 0;
+    
+                            &::before {
+                                top: 10%;
+                                width: 4px;
+                                height: 100%;
+                                right: -22%;
+                            }
+    
+                            &::after {
+                                top: 10%;
+                                left: 100%;
+                                width: 22%;
+                                height: 4px;
+                            }
+    
+                            .unicode-list
+                            {
+                                margin: 0;
+                                padding: 5px 5px;
+                                padding-left: 5px;
+                                margin-top: 0px;
+    
+                                li{
+                                    padding: 5px;
+                                    font-size: 14px;
+                                    line-height: 16px;
+                                    font-weight: 500;
+                                }
+                            }
+    
+                            h5 {
+                                font-size: 14px;
+                                line-height: 18px;
+                                padding: 10px;
+                                text-align: center;
+                            }
+                        }
+                        &.roadmap-right {
+                            padding-right: 0.756%;
+                            .o-common-card {
+                                margin-left: auto;
+    
+                                &::before {
+                                    left: -28%;
+                                }
+                                &::after {
+                                    left: auto;
+                                    right: 100%;
+                                    transform: rotate(180deg);
+                                }
+                            }
+                        }
+    
+                        &:nth-last-child(1) .o-common-card::before {
+                            display: none;
+                        }
+                    }
+    
+                }
+            }
+        }
+    }
+    
+}

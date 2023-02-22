@@ -1,0 +1,126 @@
+.navbar
+{
+    flex: 1;
+    .navbarContainer
+    {
+        height: 70px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .logo{
+            flex: 1;
+            height: 50px;
+            img{
+                height: 100%;
+            }
+        }
+
+        .navlist
+        {
+            flex: 3;
+            ul{
+                list-style: none;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                text-decoration: none;
+                line-height: 4.2rem;
+                li{
+                    margin-right: 10px;                    
+                    a.navlink
+                    {
+                        color: #000;
+                        text-decoration: none;
+                        border-top: 3px solid transparent;
+                        display: flex;
+                        padding-left: 15px;
+                        padding-right: 15px;
+                        &:hover
+                        {
+                            border-top: 3px solid rgb(27, 96, 245);
+                            color: rgb(27, 96, 245);
+                        }
+                    }
+                }
+            }
+        }
+
+        .drawerLink{
+            text-decoration: none;
+            color: #000;
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .navbar
+    {
+        .navbarContainer
+        {
+            height: 60px;
+            flex-direction: row;
+            .logo{
+                flex: 1;
+            }
+            
+            .navlist
+            {
+                flex: 3;
+                ul
+                {
+                    flex-direction: column;
+                    line-height: 4.2rem;
+                    li
+                    {
+                        margin-right: 10px;                    
+                        a.navlink
+                        {
+                            color: #000;
+                            text-decoration: none;
+                            border-top: 3px solid transparent;
+                            display: flex;
+                            padding-left: 15px;
+                            padding-right: 15px;
+                            &:hover
+                            {
+                                border-top: 3px solid rgb(27, 96, 245);
+                                color: rgb(27, 96, 245);
+                            }
+                        }
+                    }
+                }
+            }
+            
+        }
+    }
+
+    .navlist
+    {
+        ul
+        {
+            list-style: none;
+            flex-direction: column;
+            line-height: 2.5rem;
+            padding: 0;
+            li
+            {
+                margin-right: 10px;
+                border-bottom: 1px solid #333;
+
+                a.navlink
+                {
+                    color: #000;
+                    text-decoration: none;
+                    padding-left: 10px;
+                    padding-right: 10px;
+                    &:hover
+                    {
+                        color: rgb(27, 96, 245);
+                    }
+                }
+            }
+        }
+    }
+}
+

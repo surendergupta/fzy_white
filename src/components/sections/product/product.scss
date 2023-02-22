@@ -1,0 +1,209 @@
+.product
+{
+    flex: 1;
+    padding: 35px 35px;
+    border-bottom: 1px solid rgb(233, 229, 229) ;
+    .productConatiner
+    {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .ptop{
+            display: flex;
+            flex-direction: column;
+            border-bottom: none;
+            h2{
+                font-size: 30px;
+                line-height: 4rem;
+                text-align: center;
+            }
+            p{
+                font-size: 14px;
+                font-weight: 500;
+                text-align: center;
+            }
+
+            .tabContainer
+            {
+                .navtab
+                {
+                    margin: 25px auto -2px;
+                    ul{
+                        list-style: none;
+                        padding: 0;
+                        line-height: 3.5rem;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        li{
+                            line-height: 3.5rem;
+                            flex: 1;
+                            text-align: center;
+                            font-size: 16px;
+                            font-weight: 700;
+                            border-bottom: 2px solid rgb(233, 229, 229);
+                            cursor: pointer;
+                            &:nth-child(1){
+                                border-right: 1px dotted rgb(233, 229, 229);
+                            }
+    
+                            &:hover{
+                                border-bottom: 2px solid rgb(42, 123, 245);
+                            }
+    
+                            &.active{
+                                border-bottom: 2px solid rgb(42, 123, 245);
+                                cursor: not-allowed;
+                            }
+                        }
+                    }    
+                }
+
+                .businessContent
+                {
+                    border-top: 2px solid rgb(233, 229, 229);
+                    display: flex;
+                    padding: 20px;
+                    gap: 20px;
+                    .box
+                    {
+                        display: none;
+                        height: 373px;
+                        border: 1px solid rgb(233, 229, 229);
+                        &.active
+                        {
+                            display: flex;
+                        }
+
+                        .boximg
+                        {
+                            flex: 1;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            padding: 20px;
+                            gap: 20px;
+                            img{
+                                height: 250px;
+                                outline: none;
+                            }
+                        }
+                        .boxContent
+                        {
+                            flex: 2;
+                            padding: 20px;
+                            gap: 20px;
+                            
+                            overflow: overlay;
+                            &.left-image
+                            {
+                                border-left: 1px solid rgb(233, 229, 229);
+                            }
+                            &.right-image
+                            {
+                                border-right: 1px solid rgb(233, 229, 229);
+                            }
+                            .h3{
+                                font-size: 30px;
+                                font-weight: 700;
+                                line-height: 45px;
+                            }
+
+                            p{
+                                font-size: 14px;
+                                text-align: start;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width: 600px) {
+    .product{
+        padding: 20px;
+        .productConatiner {
+            .ptop
+            {
+                width: 100%;
+                h2{
+                    font-size: 18px;
+                    line-height: 2rem;
+                    text-align: center;
+                }
+                p{
+                    font-size: 13px;
+                    font-weight: 500;
+                    text-align: center;
+                }
+                .tabContainer{
+                    display: flex;
+                    flex-direction: column;
+                    .navtab
+                    {
+                        width: 100%;
+                        overflow: auto;
+                        margin: 10px auto -2px;
+                        ul
+                        {
+                            line-height: 2rem;
+                            li{
+                                line-height: 2rem;
+                                padding: 5px 10px;
+                            }
+                        }    
+                    }
+                    .businessContent
+                    {
+                        display: flex;
+                        flex-direction: column;
+                        padding: 10px;
+                        gap: 10px;
+                        .box
+                        {
+                            flex: 1;
+                            height: 200px;
+                            margin-bottom: 10px;
+                            display: none;
+                            &.active{
+                                display: block;
+                            }
+                            .boximg{
+                                width: 100%;
+                                padding: 10px;
+                                gap: 10px;
+                                justify-content: space-between;
+
+                                img{
+                                    height: 150px;
+                                    width: 94%;
+                                }
+                            }
+                            .boxContent
+                            {
+                                height: 250px;
+                                display: flex;
+                                flex-direction: column;
+                                svg{
+                                    font-size: 125px;
+                                }
+                                .hoverContent
+                                {
+                                    font-size: 13px;
+                                }
+                            }
+                            .footer{                            
+                                padding: 10px;
+                                font-size: 13px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+}

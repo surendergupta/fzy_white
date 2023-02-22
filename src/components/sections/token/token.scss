@@ -1,0 +1,164 @@
+.token{
+    flex: 1;
+    padding: 35px;
+    border-bottom: 1px solid rgb(233, 229, 229) ;
+    background-color: rgb(255, 175, 2);
+    .tokenContainer
+    {
+        flex: 1;
+        align-items: center;
+        justify-content: space-between;
+
+        .aboutToken
+        {
+            background-size: cover;
+            background-position: center bottom;
+            background-repeat: no-repeat;
+            position: relative;
+            overflow: hidden;
+            margin: 90px 0;
+            padding: 170px 0 !important;
+            flex-direction: column;           
+
+            &::before{
+                content: " ";
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: url('../../../assets/images/banner/token-banner-map.png') ;
+                background-size: 100%;
+                background-position: center center;
+                background-repeat: no-repeat;
+                z-index: 0;
+            }
+
+            .purchase-number
+            {
+                text-align: center;
+                span {
+                    font-size: 44px;
+                    font-weight: 700;
+                    line-height: 5rem;
+                }
+                h2{
+                    line-height: 3.5rem;
+                }
+            }
+        }
+        .tokeninfo
+        {
+            display: flex;
+            .left{
+                flex: 1;
+
+                .two-column{
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-around;
+                    padding: 10px 40px 10px 0;
+                    .left-column
+                    {
+                        flex: 1;
+                        line-height: 28px;
+                        margin-right: 20px;
+                        border-bottom: 4px solid #458;
+                        font-size: 16px;
+                        font-weight: 600;
+                    }
+                    .right-column
+                    {
+                        flex: 1;
+                        line-height: 28px;
+                        margin-left: 20px;
+                        border-bottom: 4px solid #458;
+                        font-size: 16px;
+                        font-weight: 600;
+
+                    }
+
+                    &:last-child .left-column{
+                        margin-right: 0px;
+                    }
+                }
+            }
+            .tokenChart{
+                flex: 1;
+                text-align: end;
+            }
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .token{
+        padding: 20px;
+        .tokenContainer
+        {
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+    
+            .aboutToken
+            {
+                margin: 20px 0;
+                padding: 30px 0 !important;
+                flex-direction: column;
+                .purchase-number
+                {
+                    span {
+                        font-size: 35px;
+                        font-weight: 700;
+                        line-height: 45px;
+                    }
+                    h2{
+                        line-height: 1.5rem;
+                    }
+                }
+            }
+            .tokeninfo
+            {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                .left{
+                    flex: 1;
+    
+                    .two-column{
+                        padding: 5px 5px 5px 0;
+                        .left-column
+                        {
+                            flex: 1;
+                            line-height: 20px;
+                            margin-right: 5px;
+                            border-bottom: 3px solid #458;
+                            font-size: 14px;
+                            font-weight: 500;
+                        }
+                        .right-column
+                        {
+                            flex: 1;
+                            line-height: 20px;
+                            margin-left: 5px;
+                            border-bottom: 3px solid #458;
+                            font-size: 14px;
+                            font-weight: 500;
+    
+                        }
+    
+                        &:last-child .left-column{
+                            margin-right: 0px;
+                        }
+                    }
+                }
+                .tokenChart{
+                    flex: 1;
+                    flex-direction: column;
+                    text-align: center;
+                    margin-top: 20px;
+                }
+            }
+        }
+    }
+}
