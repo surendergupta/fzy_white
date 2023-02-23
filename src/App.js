@@ -5,6 +5,8 @@ import About from './pages/about/About';
 import Contact from './pages/contact/Contact';
 import Register from './pages/register/Register';
 import Login from './pages/login/Login';
+import Privacy from './pages/privacy/Privacy';
+import Terms from './pages/terms/Terms';
 const App = () => {
   return (
     <div className='app'>
@@ -14,6 +16,8 @@ const App = () => {
             <Route index element={ <Home /> } />
             <Route path='about' element={ <About /> } />
             <Route path='contact' element={ <Contact /> } />
+            <Route path='term-and-condition' element={ <Terms /> } />
+            <Route path='privacy-policy' element={ <Privacy /> } />
             <Route path='login' element={ <Login /> } />
             <Route path='register' element={ <Register /> } />
           </Route>

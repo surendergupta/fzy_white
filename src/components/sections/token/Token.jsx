@@ -69,12 +69,16 @@ const Token = () => {
                 </div>
                 <div className='tokenChart'>
                     <h2>Token Distribution Chart</h2>
-                    <Chart
-                        chartType="PieChart"
-                        data={data}
-                        options={options}
-                        width={"100%"}
+                    <div style={{ height:'100%'}} >
+                        <Chart
+                            chartType="PieChart"
+                            data={data}
+                            options={options}
+                            width={"100%"}
+                            height={"100%"}
                         />
+                    </div>
+                    
                 </div>
             </div>
         </div>

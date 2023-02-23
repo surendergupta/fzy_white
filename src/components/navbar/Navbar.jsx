@@ -28,16 +28,7 @@ const Navbar = () => {
                                         <NavLink className='navlink' to={'/'}>Home</NavLink>
                                     </li>
                                     <li>
-                                        <NavLink className='navlink' to={'/#product'}>Product</NavLink>
-                                    </li>
-                                    <li>
-                                        <NavLink className='navlink' to={'/#roadmap'}>Roadmap</NavLink>
-                                    </li>
-                                    <li>
                                         <NavLink className='navlink' to={'/about'}>About</NavLink>
-                                    </li>
-                                    <li>
-                                        <NavLink className='navlink' to={'/#token'}>Tokens</NavLink>
                                     </li>
                                     <li>
                                         <NavLink className='navlink' to={'/contact'}>Contact</NavLink>
@@ -62,16 +53,7 @@ const Navbar = () => {
                                 <NavLink className='navlink' to={'/'}>Home</NavLink>
                             </li>
                             <li>
-                                <NavLink className='navlink' to={'/#product'}>Product</NavLink>
-                            </li>
-                            <li>
-                                <NavLink className='navlink' to={'/#roadmap'}>Roadmap</NavLink>
-                            </li>
-                            <li>
                                 <NavLink className='navlink' to={'/about'}>About</NavLink>
-                            </li>
-                            <li>
-                                <NavLink className='navlink' to={'/#token'}>Tokens</NavLink>
                             </li>
                             <li>
                                 <NavLink className='navlink' to={'/contact'}>Contact</NavLink>

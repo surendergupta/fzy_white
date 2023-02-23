@@ -1,0 +1,25 @@
+.contactpage
+{
+    .contactpageConatiner
+    {
+        .userContact{
+            display: flex;
+            flex: 1;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: space-between;
+            padding: 20px;
+            color: #000;
+
+            h1{
+                font-size: 32px;
+                line-height: 4rem;
+            }
+
+            h2{
+                font-size: 24px;
+                line-height: 3rem;
+            }
+        }
+    }
+}

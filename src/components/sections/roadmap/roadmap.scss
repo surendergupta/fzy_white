@@ -109,16 +109,16 @@
                         {
                             list-style: none;
                             margin: 0;
-                            padding: 5px 5px;
-                            padding-left: 10px;
-                            margin-top: 10px;
+                            padding: 0px 0px 5px;
+                            margin-top: 0px;
 
                             li{
                                 list-style: none;
-                                padding: 6px 10px;
-                                font-size: 18px;
+                                padding: 0px;
+                                font-size: 14px;
                                 line-height: 20px;
                                 display: flex;
+                                align-items: center;
                             }
                         }
 
@@ -137,7 +137,6 @@
                         padding-right: 9.756%;
                         .o-common-card {
                             margin-left: auto;
-
                             &::before {
                                 left: -91%;
                             }
@@ -159,7 +158,10 @@
     }
 }
 
-
+.MuiCheckbox-root
+{
+    padding: 0px 0px 4px 4px !important;
+}
 @media (max-width: 600px) {
     .roadmap{
         padding: 20px;    
@@ -267,5 +269,9 @@
             }
         }
     }
-    
+    .MuiCheckbox-root {
+        padding: 0px 10px 0px 0px !important;
+        height: 15px;
+        width: 15px;
+    }
 }

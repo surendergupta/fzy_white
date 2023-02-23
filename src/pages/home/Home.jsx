@@ -13,7 +13,7 @@ import Footer from '../../components/sections/footer/Footer';
 
 const Home = () => {
   return (
-    <div className='home'>
+      <div className='home'>
         <div className='homeConatiner'>
             <Navbar />
             <Top />
@@ -26,7 +26,7 @@ const Home = () => {
             <Subscription />
             <Footer />
         </div>
-    </div>
+      </div>   
   )
 }
 

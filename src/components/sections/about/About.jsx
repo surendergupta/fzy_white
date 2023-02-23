@@ -17,7 +17,9 @@ const About = () => {
 				</ul>
 			</div>
 			<div className='right'>
-				<img src={aboutMe} alt='About Me' />
+				<a href='https://www.youtube.com/watch?v=vi1B8W5FzgE' target='_blank' rel="noreferrer">
+					<img src={aboutMe} alt='About Me' />
+				</a>
 			</div>
         </div>
     </div>

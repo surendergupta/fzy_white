@@ -1,8 +1,17 @@
 .home{
     flex: 1;
+    max-width: 1500px;
+    margin: 0 auto;
     .homeConatiner{
         display: flex;
         flex-direction: column;
         color: #000000;
+    }
+}
+
+@media (max-width: 600px) {
+    .home{
+        flex: 1;
+        max-width: 100%;
     }
 }
